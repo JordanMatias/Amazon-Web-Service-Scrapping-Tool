@@ -13,3 +13,36 @@ module.exports = mongoose => {
 
     return Product;
 };
+
+module.exports = mongoose => {
+    const Gender = mongoose.model(
+        "gener",
+        mongoose.Schema(
+            {
+                name: String,
+                image: String,
+                price: String
+            },
+            { timestamps: true }
+        )
+    );
+
+    return Gender;
+};
+
+
+module.exports = mongoose => {
+    const Detist = mongoose.model(
+        "dentist",
+        mongoose.Schema(
+            {
+                name: String,
+                image: String,
+                price: String
+            },
+            { timestamps: true }
+        )
+    );
+
+    return Dentist;
+};
